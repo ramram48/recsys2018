@@ -1,0 +1,10 @@
+challenge 1 cold start problem ; playlists doesnt have any tracks : proposed solution is based on playlist name; 
+- find similar playlists 
+- find most played artists in these playlists
+- find their popular tracks
+- select these tracks as seeds for cold start playlists
+challenge 2 sparsity problem; playlists have  less than 10 tracks: proposed solution is; 
+- calculate the next track based on lstm sequence probabilities for each track in whole given playlists.
+- get 10 track candidates for last track in playlist
+lastly, create sparse matrix which is including seed tracks and run implicit matrix factorization.
+
